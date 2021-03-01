@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:cupertino_range_slider/cupertino_range_slider.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'Cupertino Range Slider',
-      theme: new ThemeData(
+      theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(),
+      home: MyHomePage(),
     );
   }
 }
@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
+    return Scaffold(
+      appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: new Text('Range Slider Demo'),
+        title: Text('Range Slider Demo'),
       ),
       body: Container(
         margin: EdgeInsets.all(10.0),
